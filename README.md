@@ -92,7 +92,7 @@ streamlit run app.py
 
 ## 🌍 Live Demo
 
-👉 (Add your Streamlit link here after deployment)
+👉 https://job-skill-analyzer-brb6gk5wr7ancwqubofq6b.streamlit.app/
 
 ---
 
