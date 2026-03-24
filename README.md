@@ -42,12 +42,12 @@ JOB_MARKET_ANALYZER/
 │   ├── week4_market_insights.csv
 │
 ├── src/
-│   ├── 01_data_cleaning.py
-│   ├── 02_skill_extraction.py
-│   ├── 03_skill_intelligence_engine.py
-│   ├── 04_market_insights_visualization.py
-│   ├── 05_skill_recommendation_engine.py
-│   ├── 06_skill_gap_engine.py
+│   ├── data_cleaning_01.py
+│   ├── skill_extraction_02.py
+│   ├── skill_intelligence_engine_03.py
+│   ├── market_insights_visualization_04.py
+│   ├── skill_recommendation_engine_05.py
+│   ├── skill_gap_engine_06.py
 │
 ├── app.py
 ├── main.py
@@ -62,7 +62,7 @@ JOB_MARKET_ANALYZER/
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/job-skill-analyzer.git
+git clone https://github.com/srishtis2200/job-skill-analyzer.git
 cd job-skill-analyzer
 ```
 
