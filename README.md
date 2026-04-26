@@ -2,7 +2,7 @@
 
 > An AI-powered web application that analyzes skill gaps for tech roles and generates personalized learning roadmaps using **Google Gemini LLM**.
 
-[![Live Demo](https://job-skill-analyzer-xyrvpw89rbsutlubr2rad9.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-FF4B4B?style=for-the-badge)](https://job-skill-analyzer-xyrvpw89rbsutlubr2rad9.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io)
 [![Gemini](https://img.shields.io/badge/Google%20Gemini-API-4285F4?style=for-the-badge&logo=google)](https://aistudio.google.com)
