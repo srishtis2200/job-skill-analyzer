@@ -1,148 +1,104 @@
-# 🚀 Job Skill Analyzer
+# 🔍 Job Skill Analyzer — GenAI Edition
 
-A complete end-to-end data project that analyzes job market data and helps users identify **skill gaps** and **recommended skills** based on their target role.
+> An AI-powered web application that analyzes skill gaps for tech roles and generates personalized learning roadmaps using **Google Gemini LLM**.
 
----
-
-## 📌 Project Overview
-
-The **Job Skill Analyzer** extracts insights from job listings and provides:
-
-* 🔍 Skill demand analysis
-* 📊 Market insights
-* 🎯 Skill gap detection
-* 📈 Personalized skill recommendations
+[![Live Demo](https://job-skill-analyzer-xyrvpw89rbsutlubr2rad9.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io)
+[![Gemini](https://img.shields.io/badge/Google%20Gemini-API-4285F4?style=for-the-badge&logo=google)](https://aistudio.google.com)
 
 ---
 
-## 🧠 Features
+## 📌 Overview
 
-* ✅ Data cleaning & preprocessing
-* ✅ Skill extraction from job descriptions
-* ✅ Skill intelligence engine
-* ✅ Market insights visualization
-* ✅ Skill recommendation system
-* ✅ Skill gap analyzer (final module)
-* ✅ Interactive web app using Streamlit
+Job Skill Analyzer helps CS students and job seekers identify exactly what skills they are missing for their target role — and then uses **Google Gemini AI** to tell them what to learn first, how to learn it, and answers any career questions they have.
+
+Built with a modular pipeline for data processing, a market-demand scoring engine, and three distinct GenAI features powered by prompt engineering.
 
 ---
 
-## 🗂️ Project Structure
+## ✨ Features
+
+### 📊 Skill Gap Analysis
+- Enter your current skills and select a target role
+- Instantly see which skills you're missing, ranked by **market demand score**
+- Categorized by skill type (Data Analysis, Visualization, ML, etc.)
+
+### 🎯 AI Skill Prioritizer *(Powered by Gemini)*
+- Ranks your missing skills from most to least important for hiring
+- Labels each skill as 🔴 Critical / 🟡 Important / 🟢 Nice-to-have
+- Gives a one-line reason for each ranking
+
+### 🗓️ 4-Week Learning Roadmap *(Powered by Gemini)*
+- Generates a personalized day-by-day study plan
+- Includes **free resources only** (Khan Academy, YouTube, official docs)
+- Ends with a "Quick Win" — something actionable to start today
+
+### 💬 CareerBot *(Powered by Gemini)*
+- Multi-turn AI chatbot with full conversation memory
+- Ask about interview tips, salary, projects, tools — anything career related
+- Role-aware: responses tailored to your specific target role
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Streamlit |
+| Data Processing | Python, Pandas |
+| AI / LLM | Google Gemini 2.5 (google-genai SDK) |
+| Prompt Engineering | Structured prompt templates |
+| Deployment | Streamlit Cloud |
+| Version Control | Git, GitHub |
+
+---
+
+## 📁 Project Structure
 
 ```
-JOB_MARKET_ANALYZER/
-│
-├── data/
-│   └── jobs.csv
-│
-├── outputs/
-│   ├── cleaned_jobs.csv
-│   ├── week2_jobs_with_skills.csv
-│   ├── week3_skill_intelligence.csv
-│   ├── week4_market_insights.csv
-│
+job-skill-analyzer/
+├── app.py                  # Main Streamlit app with GenAI features
+├── main.py                 # CLI version of the analyzer
 ├── src/
-│   ├── data_cleaning_01.py
-│   ├── skill_extraction_02.py
-│   ├── skill_intelligence_engine_03.py
-│   ├── market_insights_visualization_04.py
-│   ├── skill_recommendation_engine_05.py
-│   ├── skill_gap_engine_06.py
-│
-├── app.py
-├── main.py
+│   └── skill_gap_engine_06.py  # Core skill gap ranking engine
+├── outputs/
+│   └── week4_market_insights.csv  # Market demand dataset
+├── data/                   # Raw data files
+├── notebooks/              # Jupyter notebooks for EDA and analysis
+├── assets/                 # Static assets
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Run Locally
 
-1. Clone the repository:
-
-```
+```bash
+# 1. Clone the repository
 git clone https://github.com/srishtis2200/job-skill-analyzer.git
 cd job-skill-analyzer
-```
 
-2. Install dependencies:
-
-```
+# 2. Install dependencies
 pip install -r requirements.txt
-```
 
----
+# 3. Add your Gemini API key
+# Create .streamlit/secrets.toml and add:
+# GEMINI_API_KEY = "your-key-here"
+# Get a free key at: https://aistudio.google.com/app/apikey
 
-## ▶️ Run the Project
-
-### Run CLI version:
-
-```
-python main.py
-```
-
-### Run Streamlit App:
-
-```
+# 4. Run the app
 streamlit run app.py
 ```
 
 ---
 
-## 🌍 Live Demo
+## 🎯 Supported Roles
 
-👉 https://job-skill-analyzer-brb6gk5wr7ancwqubofq6b.streamlit.app/
-
----
-
-## 🧪 Example
-
-**Input:**
-
-* Skills: `python, sql`
-* Role: `data analyst`
-
-**Output:**
-
-* Missing Skills: `statistics, excel, tableau, power bi`
-* Recommended Skills ranked by importance
-
----
-
-## 📊 Tech Stack
-
-* Python 🐍
-* Pandas
-* Streamlit
-* Data Analysis
-
----
-
-## 🎯 Learning Outcomes
-
-* Real-world data pipeline building
-* Feature engineering
-* Data analysis & visualization
-* Building recommendation systems
-* Deploying ML/data apps
-
----
-
-## 🤝 Contributing
-
-Feel free to fork the repo and improve the project.
-
----
-
-## 📄 License
-
-This project is for educational purposes.
-
----
-
-## ⭐ Acknowledgment
-
-Built as a hands-on project to understand job market analytics and skill gap analysis.
+- Data Analyst
+- Data Scientist  
+- Machine Learning Engineer
+- Data Engineer
 
 ---
