@@ -142,7 +142,6 @@ st.markdown("Analyze your skill gap for different job roles — powered by **Goo
 
 if not GEMINI_API_KEY:
     st.warning("⚠️ AI features disabled. Add your **GEMINI_API_KEY** in `.streamlit/secrets.toml` to enable them.")
-    st.write("Debug - all secrets:", list(st.secrets.keys()) if st.secrets else "NO SECRETS FOUND")
 
 # ── Input Section ─────────────────────────────────────────────────
 st.subheader("🧠 Enter Your Details")
