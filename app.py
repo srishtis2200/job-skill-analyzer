@@ -11,7 +11,9 @@ st.set_page_config(page_title="Job Skill Analyzer", page_icon="🔍", layout="ce
 # Locally:  .streamlit/secrets.toml  →  GEMINI_API_KEY = "your-key"
 # Streamlit Cloud: App Settings → Secrets → same line
 try:
-    GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY", "")
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+except KeyError:
+    GEMINI_API_KEY = ""
 except Exception:
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
